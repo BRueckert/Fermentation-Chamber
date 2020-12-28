@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+   <head>
+      <title>{{ title }}</title>
+      <link rel="stylesheet" href="/static/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <h2>Fermentation Data Viewer</h2>
+      <p>Last updated: {{date}}</p>
+      <p>Ambient Temp: {{tempOut}}</p>
+      <p>Fermentor Temp: {{tempIn}}</p>
+      <p>Beer Temp: {{tempBeer}}</p><br>
+      <form method="POST">
+        Set thermostat value:<br>
+        <input type="text" name="tempSet"<br>
+        <input type="submit" value="submit">
+      </form>
+      <p>Set Temp: {{tempSet}}</p><br>
+      <hr>
+      <img src="/graph" alt="Image Placeholder" width="100%">
+
+   </body>
+</html>
